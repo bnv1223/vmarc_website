@@ -1,0 +1,118 @@
+.contactUs_main-div{
+    display: flex;
+    justify-content: center;
+    /* padding-top: 1rem; */
+    height: 80vh;
+    width: 100%;
+    /* background-color: #363636; */
+}
+
+.contactUs_main{
+    position: relative;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    height: 100%;
+    width: 80%;
+    color: white;
+    /* border-left: 4.04px solid #9747FF; */
+    /* border-top: 4.04px solid #FF6B00; */
+    /* border-top-left-radius: 1rem; */
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 2rem;
+}
+.contactUs_text_main{
+    position: absolute;
+    /* left: 0; */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    /* background-color: #9747ff1f; */
+    height: 55%;
+    width:50%;
+    z-index: 9;
+}
+.contactUs_text_p1{
+   /* font-family: Plus Jakarta Sans; */
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 20px;
+   letter-spacing: 0.1em;
+   /* text-align: left; */
+}
+.contactUs_text_heading{
+    /* font-family: Poppins; */
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    /* text-align: left; */
+}
+.contactUs_text_p2{
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    /* text-align: left; */
+
+}
+.contactUs_button{
+    margin-top: 1rem;
+    width: Hug (108px)px;
+    height: Fixed (48px)px;
+    padding: 12px 24px 12px 8px;
+    gap: 8px;
+    border-radius: 4px;
+    opacity: 0px;
+    background-color:  #EF3F3C;
+    border: none;
+}
+/* .................... */
+/* .................. */
+
+
+.contactUs_block {
+    position: relative;
+    margin: 9px auto 10px;
+    background-color: #363636;
+
+    /* background: linear-gradient(0deg, #000, #272727); */
+  }
+  
+  .contactUs_block:before, .contactUs_block:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-right: 0;
+    background: linear-gradient(45deg,#FF6B00,  #9747FF, #FFFFFF );
+    background-size: 500%;
+    width: calc(100% + 4px);
+    height: calc(100% + 9px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .contactUs_block:after {
+    filter: blur(0px);
+  }

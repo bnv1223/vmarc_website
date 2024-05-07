@@ -1,0 +1,117 @@
+/* ........... */
+.contactUs_img_main{
+    position: relative;
+    /* border: 1px solid #FFFFFF; */
+    margin-left: auto;
+    height: 100%;
+    width:80%;
+}
+.contactUs_img{
+   object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* ......lokation...... */
+
+.shape_main{
+    position: absolute;
+    width: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ .shape {
+       -moz-transform: skew(-90deg);
+       -webkit-transform: skew(-90deg);
+        height: 100px;
+        width: 25px;
+        border-left: 2px solid #FFFFFF;
+        border-top: 2px solid #FFFFFF;
+        transform: skew(-45deg);
+
+  }
+  .shape_p1{
+    /* font-family: Plus Jakarta Sans; */
+    font-size:12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+  .location_img_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #FFFFFF; */
+    position: absolute;
+    height: 35px;
+    width: 25px;
+  }
+ 
+
+/* ......hidden show */
+
+.shape_main_location1{
+    /* border: 1px solid #FFFFFF; */
+    visibility: hidden;
+    top: 13%;
+    right: 27%;
+}
+.shape_main_location2{
+    /* border: 1px solid #FFFFFF; */
+    visibility: hidden;
+    top: 23%;
+    right: 32%;
+}
+.shape_main_location3{
+    /* border: 1px solid #FFFFFF; */
+    visibility: hidden;
+    top: 33%;
+    right: 22%;
+}
+.show1{
+    visibility: visible;
+}
+.show2{
+    visibility: visible;
+}
+.show3{
+    visibility: visible;
+}
+
+  .location_img1{
+    background-image: url('/img/location2.png' ) ;
+    background-repeat:no-repeat;
+    object-fit:fill;
+    top: 30%;
+    right: 55%;
+  }
+  .location_img2{
+    background-image: url('/img/location2.png' ) ;
+    background-repeat:no-repeat;
+    object-fit:fill;
+    top: 40%;
+    right: 60%;
+    z-index: 9;
+  }
+  .location_img3{
+    background-image: url('/img/location2.png' ) ;
+    background-repeat:no-repeat;
+    object-fit:fill;
+    top: 50%;
+    right: 50%;
+  }
+  .location_img1:hover{
+    
+    background-image: url('/img/location1.png' ) ;
+    
+  }
+  .location_img2:hover{
+    background-image: url('/img/location1.png' ) ; 
+  }
+
+  .location_img3:hover{
+    background-image: url('/img/location1.png' ) ; 
+  }
+  
+  

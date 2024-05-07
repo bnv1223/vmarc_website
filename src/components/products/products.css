@@ -1,0 +1,241 @@
+.products_main_div{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    /* padding-top: 1rem; */
+    /* margin: 3px;; */
+    /* background-color: rgba(244, 234, 234, 0); */
+}
+
+.products_main{
+    background-color: #000000;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    color: white;
+    /* border: 4.04px solid #FF6B00; */
+    /* border-top: 4.04px solid #FF6B00; */
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 2rem;
+}
+.products_top_main{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+.products_left{
+    /* border: 1px solid white; */
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;  
+    flex-direction: column;  
+}
+
+.Our_Products{
+      /* font-family: Poppins; */
+     font-size: 27px;
+     font-weight: 500;
+     line-height: 48px;
+     letter-spacing: -1px;
+     /* text-align: left; */
+}
+
+.products-p1{
+     /* font-family: Poppins; */
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
+     letter-spacing: -0.5px;
+     /* text-align: left; */
+}
+.products-p2{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+}
+.products_right_main{
+    /* border: 1px solid white; */
+    width: 50%;
+    height: 100%;
+   position: relative;
+    /* flex-direction: column;  */
+
+    
+
+}
+.products_search_main{
+    /* border: 1px solid white; */
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 3rem;
+    left: 0%;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.products_search_box{
+    padding-left: 35%;
+    width: 80%;
+    height: 100%;
+    border: none;
+    margin-left: auto;
+    margin-right: 2.5%;
+    background: rgba(243, 243, 243, 0.25);
+
+   
+}
+
+.products_search_box::placeholder{
+/* color:#FF6B00; */
+/* font-family: Poppins; */
+color:  rgba(174, 174, 174, 1);
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+/* text-align: left; */
+}
+.products_search_button{
+    width: 51.07px;
+    height: 39.58px;
+    gap: 0px;
+    opacity: 0px;
+    background: rgba(68, 86, 176, 1);
+    border: none;
+    color: #FFFFFF;
+}
+.products_mid_main{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.products_nav_main{
+    /* border: 1px solid white; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+.products_bottom_main{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.products_img_main{
+    /* border: 1px solid white; */
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background-image: url('/img/products1.png') ;
+}
+
+
+.products_imag_div{
+     height: 100%;
+    width: 100%;
+}
+.products_imag{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+}
+.products_img_text_main{
+    /* border: 1px solid white; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    padding: 0 1rem;
+}
+.products_img_text_p1{
+    /* font-family: Poppins; */
+    font-size: 21.41px;
+    font-weight: 500;
+    line-height: 26px;
+    /* text-align: left; */
+    color: #FFFFFF;
+
+}
+.products_img_text_p2{
+/* font-family: Poppins; */
+font-size: 10.7px;
+font-weight: 500;
+line-height: 12.23px;
+/* text-align: left; */
+color: #FFFFFF;
+
+}
+
+.products_img_main:hover{
+    content: '';
+    background-color: red;
+    z-index: 9;
+    background-image: none;
+}
+
+
+
+/* .................. */
+
+
+.block {
+    position: relative;
+    margin: 5px auto 10px;
+    background: linear-gradient(0deg, #000, #272727);
+  }
+  
+  .block:before, .block:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-right: 0;
+    background: linear-gradient(45deg,#FF6B00,  #9747FF, #FFFFFF );
+    background-size: 500%;
+    width: calc(100% + 4px);
+    height: calc(100% + 9px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .block:after {
+    filter: blur(0px);
+  }

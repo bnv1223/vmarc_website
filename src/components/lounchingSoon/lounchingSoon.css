@@ -1,0 +1,127 @@
+.lounchingSoon_main_div{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    /* background-color: black; */
+    /* padding-top: 1rem; */
+}
+.lounchingSoon_main{
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 99%;
+    width: 80%;
+    color: white;
+    /* border-right: 4.04px solid #9747FF;
+    border-top: 4.04px solid #FF6B00; */
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 2rem;
+}
+.lounchingSoon_heading_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    /* border: 1px solid white; */
+}
+.lounchingSoon_heading{
+    /* font-family: Poppins; */
+font-size: 24px;
+font-weight: 500;
+line-height: 48px;
+letter-spacing: -1px;
+/* text-align: left; */
+
+}
+
+.lounchingSoon_img_main_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85%;
+    width: 100%;
+    /* border: 1px solid white; */
+}
+.lounchingSoon_img_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%;
+    width: 25%; */
+    width: 158px;
+    height: 172px;
+    /* padding: 65px 0px 125px 0px; */
+    gap: 0px;
+    opacity: 0px;
+    /* border: 1px solid #FCFCFC; */
+    /* border-radius: 9px; */
+    transition:all ease-in-out 2s;
+    /* transition: height 4s; */
+
+}
+.lounchingSoon_img_main:hover{
+    width: 258px;
+    height: 272px;
+    border: 3px solid #149af4;
+    background-color: #70baff45;;
+    border-radius: 9px;
+    
+
+
+}
+.lounchingSoon_img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+  
+/* ................. */
+.lounchingSoon_block {
+  position: relative;
+  margin: 9px auto 10px;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.lounchingSoon_block:before, .lounchingSoon_block:after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-left: 0;
+  background: linear-gradient(45deg,#FF6B00,  #9747FF, #FFFFFF );
+  background-size: 500%;
+  width: calc(100% + 4px);
+  height: calc(100% + 9px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.lounchingSoon_block:after {
+  filter: blur(0px);
+}
+
+
+ 
